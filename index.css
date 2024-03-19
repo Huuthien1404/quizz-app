@@ -1,0 +1,137 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    text-rendering: optimizeSpeed;
+    scroll-behavior: smooth;
+    min-height: 100vh;
+    padding: 60px 5px;
+    background-image: linear-gradient(to bottom right, #031e4c, #01183f);
+}
+
+.container {
+    max-width: 428px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.quiz-container {
+    width: 100%;
+    border-radius: 10px;
+    background-color: white;
+    padding: 24px 16px;
+}
+
+#quiz-title {
+    user-select: none;
+    color: #0e1f44;
+    font-size: 1.5rem;
+    /* 24px */
+    line-height: 2rem;
+    /* 32px */
+    font-weight: 600;
+    padding-bottom: 8px;
+    border-bottom: 1.5px solid #0e1f44;
+    margin-bottom: 16px;
+}
+
+#quiz-question {
+    user-select: none;
+    color: #0e1f44;
+    font-size: 1rem;
+    /* 16px */
+    line-height: 1.5rem;
+    /* 24px */
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.quiz-answer {
+    color: #0e1f44;
+    border-radius: 3px;
+    padding: 8px;
+    font-size: 0.875rem;
+    /* 14px */
+    line-height: 1.25rem;
+    /* 20px */
+    font-weight: 400;
+    border: 1px solid #0e1f44;
+    margin-bottom: 16px;
+    user-select: none;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+
+.quiz-answer:hover {
+    background-color: #212121;
+    color: white;
+}
+
+.quiz-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-btn {
+    border-radius: 3px;
+    user-select: none;
+    font-size: 0.875rem;
+    /* 14px */
+    line-height: 1.25rem;
+    /* 20px */
+    font-weight: 500;
+    color: white;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #0e1f44;
+    width: 120px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.quiz-btn:hover {
+    background-color: green;
+}
+
+.quiz-btn:active {
+    background-color: orangered;
+}
+
+.show-quiz-btn {
+    display: flex;
+}
+
+.prevent-click-ans {
+    pointer-events: none;
+}
+
+.cursor-prevent-click {
+    cursor: no-drop;
+}
+
+.true-ans {
+    background-color: #9de0bb;
+}
+
+.false-ans {
+    background-color: #ff9c92;
+}
+
+.notification-finished {
+    color: #0e1f44;
+    font-weight: 500;
+    user-select: none;
+    margin-bottom: 16px;
+}
